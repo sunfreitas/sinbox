@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Inbox - jQuery plugin</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <table id="sinbox" class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th>
+                  Assunto
+                </th>
+                <th>
+                  Remetente
+                </th>
+                <th>
+                  Data
+                </th>
+                <th class="header-mensagem">
+                  Mensagem
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="assunto">
+                  From chewbacca
+                </td>
+                <td class="usuario">
+                  Chewbacca
+                </td>
+                <td class="data">
+                  2016-10-26
+                </td>
+                <td class="mensagem">
+                  Lucas ipsum dolor sit amet chewbacca sebulba sith k-3po leia
+                  mon naboo mustafar darth boba. Calamari aayla fett padmé moff.
+                  Greedo anakin jango sith moff amidala. Thrawn coruscant ackbar
+                  binks maul mon. Binks vader c-3p0 obi-wan moff wampa windu.
+                </td>
+              </tr>
+              <tr>
+                <td class="assunto">
+                  From chewbacca
+                </td>
+                <td class="usuario">
+                  Chewbacca
+                </td>
+                <td class="data">
+                  2016-10-26
+                </td>
+                <td class="mensagem">
+                  Biggs ventress anakin dantooine. K-3po calrissian darth sidious.
+                  Baba darth mothma endor moff hutt jade. Calrissian vader fett
+                  anakin wookiee c-3po. Twi'lek palpatine antilles moff. Twi'lek
+                  greedo ahsoka owen organa calamari jango wedge.
+                </td>
+              </tr>
+              <tr>
+                <td class="assunto">
+                  From C3PO
+                </td>
+                <td class="usuario">
+                  C3PO
+                </td>
+                <td class="data">
+                  2016-10-26
+                </td>
+                <td class="mensagem">
+                  Droid hutt calrissian windu mon antilles organa. Darth hutt
+                  yoda palpatine luuke amidala. Cade utapau dooku solo solo.
+                  Skywalker c-3po organa mon jade yavin calamari. Ackbar vader
+                  twi'lek thrawn. Bothan qui-gonn kenobi skywalker obi-wan
+                  solo owen coruscant lobot.
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+          </table>
+        </div>
+        <div class="col-md-6 message-box">
+          <h4>Caixa de mensagens</h4>
+          <div id="message-content">
+            <p class="text-muted">
+              Não há mensagens no momento
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script type="text/javascript" src="./js/jquery.1.11.1.min.js"></script>
+  <script type="text/javascript" src="./js/simple-inbox-jquery-0.0.0.js"></script>
+  <script type="text/javascript">
+    $('#sinbox').sinbox();
+  </script>
+  </body>
+</html>
