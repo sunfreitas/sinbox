@@ -1,4 +1,17 @@
-$.fn.sinbox = function(){
+$.fn.sinbox = function(options){
+
+  // Defaults
+  var settings = $.extend({
+    inbox: '#message-content',
+    theader: '.header-mensagem',
+    tbody: '.mensagem',
+    assunto: '#assunto',
+    usuario: '#usuario',
+    date: '#data',
+    body: '#body',
+    fx: 'ease'
+  }, options);
+
   /*
    * inicializando a tabela.
    */
@@ -17,14 +30,13 @@ $.fn.sinbox = function(){
   rows.each(function(index){
     $(this).on('click', function(){
       var mensagem = $(this).find('td.mensagem');
-      // console.log(mensagem.text());
-      clear();
-      $(inbox).append(mensagem.text());
+      $(inbox)
+        .fadeOut(300, function(){
+          $(inbox).text('');
+          $(inbox).append(mensagem.text())
+          $(inbox).fadeIn(500)
+        });
     });
-  });
-
-  var clear = function(){
-    $(inbox).text('');
-  };
+  })
 
 };
